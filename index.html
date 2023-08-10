@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script defer src="init-firebase.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="edit">
+        <div id="name">name<input id="name_input" type="text" ></div>
+        <div id="age">age<input id="age_input" type="text" ></div>
+
+     </div>
+      <a href="community.html">community</a>
+    </div>
+    <div id="page_heading">
+      <div id="image_container">
+        <img
+          id="heading_img"
+          src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+        />
+      </div>
+      <div id="personal_information_container">
+        <div class="personal_info">name:<span id="user_name"></span></div>
+        <div class="personal_info">age:<span id="user_age"></span></div>
+       
+      </div>
+    </div>
+    <!--THIS IS THE END OF THE PAGE HEADING-->
+
+    <div id="page_body">
+      <h1>About me</h1>
+      <div id="aboutMe_container"></div>
+      <div id="create_post">
+        <!-- <div id="post-container">
+
+        </div> -->
+        <form>
+          <!--MESSAGES OR TEXT-->
+          <div class="inputs">
+            <label>Message:</label>
+            <input type="text" id="message" />
+          </div>
+          <div class="inputs">
+            <label>Image source:</label>
+            <input type="text" id="image"/>
+          </div>
+          <div id="btn_container">
+            <div id="post_btn">post</div>
+          </div> 
+          <div id="post-container">
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
